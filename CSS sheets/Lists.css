@@ -1,0 +1,41 @@
+
+ol{
+    /* list-style-type: lower-alpha; */
+    list-style-type:lower-greek;
+}
+
+ul{
+    /* list-style-type:square; */
+    /* list-style-type:square; */
+    /* list-style-position:inside; */
+    list-style: inside circle;
+}
+
+table{
+    width: 220px;
+    margin: auto;
+    /* border-spacing: 5px 5px; */
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    font-size:18px;
+    border-bottom: 1px solid rgb(118, 62, 170) ;
+    padding: 4px;
+}
+
+.dur{
+    text-align:right;
+}
+
+td{
+    padding: 5px;
+    border: 1px solid blueviolet;
+}
+
+tr:nth-child(even){
+    background-color:rgb(211, 103, 63);
+}
+
+

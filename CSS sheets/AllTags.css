@@ -1,0 +1,43 @@
+/* UNIVERSAL SELECTOR */
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* TYPE SELECTOR */
+h2{
+    color:blueviolet;
+}
+
+p,h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+/* IMPORTANT (MUST APPLY) */
+h4{
+    color:orange !important;
+}
+
+/* CLASS SELECTOR */
+.List{
+   color:rgba(220, 60, 20, 0.9);
+   color:#dc3c14e6;
+}
+
+/* ID SELECTOR */
+#heading{
+    color:blueviolet;
+}
+
+/* CHILD SELECTOR */
+
+div > h3{       /* THIS H3 HAS MORE SPECIFIC*/ 
+    color:crimson;
+}
+
+
+/* DESCENDANT SELECTOR */
+
+h3{
+    color:black;
+}

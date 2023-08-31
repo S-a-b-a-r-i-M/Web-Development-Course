@@ -6,7 +6,6 @@ ol{
 
 ul{
     /* list-style-type:square; */
-    /* list-style-type:square; */
     /* list-style-position:inside; */
     list-style: inside circle;
 }
@@ -21,7 +20,7 @@ table{
 th{
     text-align: left;
     font-size:18px;
-    border-bottom: 1px solid rgb(118, 62, 170) ;
+    border-bottom: 1px solid rgb(52, 29, 73) ;
     padding: 4px;
 }
 

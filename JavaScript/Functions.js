@@ -24,6 +24,7 @@ console.log("sum is",add);
 */
 
 //DEFAULT ARGUMENTS
+/*
 function sum(num1=0,num2=0,num3=0)
 {
     return num1+num2+num3;
@@ -59,3 +60,50 @@ function add(num1,num2)
 }
 
 add(-10,-1.2);
+                */
+
+
+//CONSTRUCTOR FUNCTION
+function Person(name, gender, age)
+{
+    this.name=name;
+    this.gender=gender;
+    this.age=age;
+
+    this.print= function(){
+        console.log(`${this.name} is a ${this.gender} and he/she is ${this.age} years old \n`);
+    }
+}
+
+let obj1=new Person('sabari','male',21);
+let obj2=new Person('nithika','female',11);
+
+console.log(obj1,'\n');
+console.log(obj2);
+
+obj1.print();
+obj2.print();
+
+obj2.age=12;
+obj2.print();
+console.log(obj2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

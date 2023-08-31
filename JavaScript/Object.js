@@ -1,6 +1,7 @@
 //OBJECT LITERAL
 let human={
-   
+   name:'sabari',
+   age:21,
 };
 
 //console.log(human);
@@ -56,7 +57,7 @@ let man={
 }
 //USED TO MERGE TWO OR MORE OBJECTS INTO A TARGET OBJECT
 Object.assign(human,man,woman);
-console.log(human);
+//console.log(human);
 
 //USED TO RETRIEVE AN ARRAY OF OBJECT'S KEYS
 console.log('\nKeys :'+Object.keys(software_dev)+"\n");
@@ -66,5 +67,91 @@ console.log("Values :" + Object.values(software_dev)+'\n');
 
 //USED TO RETRIEVE AN ARRAY OF OBJECT'S ENTRIES
 console.log(Object.entries(software_dev)+'\n');
+
+//METHOD IN OBJECT
+let dog={
+    name:'Tornado',
+    color:'Brown',
+    sound: function(){
+        console.log("VowVow...Vow!!! \n")
+    }
+}
+
+dog.sound();
+ 
+let cat={
+    name:"poona",
+    color:"white with blue",
+    sound: () => {
+        console.log("MeowMeow...Meow*** \n")
+    }
+}
+
+cat.sound();
+
+
+//THIS KEYWORD
+let laptop={
+    cpu:'AMD',
+    ram:8,
+    brand:undefined,
+
+    setBrand: function(brand){
+        this.brand=brand;
+    }
+}
+/*
+console.log(laptop);
+console.log("\nAfter set brand");
+laptop.setBrand("Dell");
+console.log(laptop);*/
+
+
+let mobile1={
+    ram:8,
+    core:4,
+    brand:'Vivo',
+
+    compare: function(mobile2){
+        if(this.core >= mobile2.core)
+            console.log(this.brand+' win '+mobile2.brand);
+        else
+            console.log("You lost this game");
+    },
+}
+
+let mobile2={
+    ram:4,
+    core:4,
+    brand:'Redmi',
+
+    compare: (other_mobile) =>
+    {
+        if(this.ram > other_mobile.ram)
+            console.log(this.brand+' win this Mobile '+other_mobile.brand);
+        else
+            console.log("You lost this game");
+    }
+}
+
+mobile1.compare(mobile2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

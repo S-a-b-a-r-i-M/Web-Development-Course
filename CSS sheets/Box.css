@@ -1,6 +1,6 @@
 
 h2{
-    /* border:2px solid black; */
+    /* border:medium inset rgb(84, 87, 78); */
     border-width:medium;
     border-style:inset;
     border-color: rgb(84, 87, 78);
@@ -11,6 +11,7 @@ p{
      border:4px solid gray; 
      max-width: 100%;
      min-width: 100px;
+     max-height: 260px;
      border-radius: 15px;
      padding:5px;
      overflow:scroll;
@@ -25,7 +26,11 @@ p{
 }
 
 .list{
-    
     margin:10px;
+}
+
+li{
+    display: inline;
+    margin:5px; 
 }
 

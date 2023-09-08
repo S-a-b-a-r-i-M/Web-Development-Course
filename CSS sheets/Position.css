@@ -1,0 +1,73 @@
+h2{
+    text-transform: capitalize;
+    text-align: center;
+    color: darkred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.redBox{
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    position: absolute;
+}
+
+.orangeBox{
+    width: 200px;
+    height:200px;
+    background-color: orange;
+    /* POSITIONING */
+    /* position: relative; */
+    position: fixed;
+    bottom:50px;
+    right:10px;
+}
+
+.yellowBox{
+    width:100px;
+    height:100px;
+    background-color: yellow;
+    border: 2px dotted black;
+    /* POSITIONING */
+    /* position:relative; */
+    position:absolute;
+    /* OFFSET */
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+}
+
+.blackBox{
+    width:150px;
+    height:150px;
+    background-color: black;
+    border-radius: 25px;
+    /* POSITIONING */
+    position: sticky;
+    bottom: 10px;
+    top: 10px;
+}
+
+p{
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.blackBox > p{
+    position: relative;
+    top:60px;
+    text-align: center;
+}
+
+.orangeBox p{
+    position: relative;
+    top:20px;
+    text-align: center;
+}
+
+.redBox p{
+    position: relative;
+    top: 40px;
+    text-align: center;
+}

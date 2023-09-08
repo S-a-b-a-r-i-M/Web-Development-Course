@@ -1,0 +1,27 @@
+
+.gradient{
+    position: relative;
+}
+
+/* LINEAR GRADIENT */
+.linear-gradient{
+    width: 200px;
+    height: 200px;
+    /* background: linear-gradient(crimson,rgb(216, 171, 179),rgb(61, 255, 2)); */
+    /* background: linear-gradient(to left,blue,red); */
+    /* background: linear-gradient(to right,#9AD1D4 20%,blue 60%,red);  */
+    background: linear-gradient(45deg,#9AD1D4 20%,#9AD1D4,blue 60%,red);
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.radial-gradient{
+    width: 200px;
+    height: 200px;
+    position: inherit;
+    left: 350px;
+    top: 50px;
+    /* background: radial-gradient(crimson,rgb(216, 171, 179)); */
+    background: radial-gradient(#91c4c7 30%,blue 10%,red);
+}

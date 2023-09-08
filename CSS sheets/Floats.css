@@ -1,0 +1,22 @@
+
+div img{
+    margin:10px;
+}
+
+div p{
+   width: 100%;
+   text-align: justify;
+   line-height: 1.5em;
+}
+
+.forest img{
+    float: left;
+}
+
+.sunset img{
+    float: right;
+}
+
+.nature img{
+    float: none;
+}

@@ -1,0 +1,76 @@
+
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    background-color: aliceblue;
+}
+
+.grid_container{
+    background-color: tan;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* grid-template-columns: 210px 210px auto; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: 1fr 1fr 1fr;  */
+   
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    /* SHORTHAND PROPERTY FOR COLUMN GAP AND ROW GAP */
+    gap: 15px;
+}
+
+.para{
+    color: black;
+    background-color:thistle;
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+}
+
+.grid_numbers{
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: auto 90px auto; */
+    gap: 10px;
+}
+
+.number{
+    background-color: orangered;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.num1{
+    /* WE CAN SPECIFY THE GRID START AND END */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* align-self: center; */
+}
+
+.num7{
+    /* WE CAN SPECIFY THE GRID START AND END  SHORT HAND PROPERTY*/
+    /* grid-column: 2/4;
+    grid-row: 3/5; */
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+h2{
+    text-transform: capitalize;
+}
+
+.units{
+    /* CHANGING PARA1 PARENT FONT SIZE */
+    font-size: 12px;
+}
+
+.units > #para1{
+    /* em - USED PARENT SIZE */
+    font-size: 1.5em;
+}
+
+#para2{
+    /* rem - USED ROOT SIZE */
+    font-size: 1.5rem;
+}
+
+.box{
+    width: 30vw;
+    height: 30vh;
+    border: 2px solid #2E765E;
+}
+
+
+

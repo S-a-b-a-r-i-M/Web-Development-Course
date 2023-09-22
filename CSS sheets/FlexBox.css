@@ -1,0 +1,42 @@
+
+.flexBox{
+    min-height: 400px;
+    display: flex;
+    flex-direction: row; 
+    border: 2px double black;
+    /*justify-content: flex-end;/*IT ALIGNS IN X AXIS*/
+    justify-content: space-around;
+    align-items: center;/*IT ALIGNS IN Y AXIS*/ 
+    flex-wrap: wrap; /*IT WILL WRAP BOX INTO ANOTHER LINE WHITHOUT CHANGING SIZE */
+    padding: 10px;
+}
+
+.box{
+    width: 100px;
+    height: 120px;
+    background: conic-gradient(crimson,orange,crimson);
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+}
+
+.box1{
+    flex-grow: 1;
+}
+
+.box2{
+    flex-grow: 1;
+}
+
+.box3{
+ /* flex: grow shrink basis */
+    flex: 1 1 0px;
+}
+
+.box4{
+    flex-grow: 1;
+ } 
+
+
+

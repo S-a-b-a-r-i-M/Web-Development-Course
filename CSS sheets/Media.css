@@ -30,7 +30,14 @@ h2{
         font-size: 20px;
         line-height: 1.0em;
     }
-  
+
+    /*
+    By USING FLEX YOU CAN SEE THE DIFFERENCE IN PARA
+     .responsive{
+        display: flex;
+        flex-direction: row;
+    }  */
+
     h2{
         background-color:rgb(134, 153, 172);
         width: 30%;

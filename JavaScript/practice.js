@@ -12,4 +12,23 @@ console.log(`The addition of ${num1} and ${num2} is ${result}`);
  whatever in this backticks ,will print as it is
  ..............`);*/
 
- 
+ //RECURSION
+/*
+ function factorial(num)
+ {
+    let fact;
+    if(num==0)
+        return 1;
+    else
+        fact=num * factorial(num-1);
+
+    return fact;
+ }
+
+ console.log("Factorial of 6 :",factorial(6));
+
+*/
+
+ let nme="100";
+ let diff=nme-10;
+ console.log(diff);

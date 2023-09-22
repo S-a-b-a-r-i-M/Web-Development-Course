@@ -19,9 +19,47 @@
 .radial-gradient{
     width: 200px;
     height: 200px;
-    position: inherit;
+    position: relative;
     left: 350px;
     top: 50px;
     /* background: radial-gradient(crimson,rgb(216, 171, 179)); */
-    background: radial-gradient(#91c4c7 30%,blue 10%,red);
+    background: radial-gradient(#2E765E ,#F1CCD7 ,red);
 }
+
+.conic-gradient{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: 60px;
+    background: conic-gradient(#4B0082, #0000FF, #00FF00, #FFFF00, #FFA500, #FF0000);
+}
+
+.round{
+    width: 150px;
+    height: 150px;
+    border: 2px black solid;
+    border-radius: 100px;
+    position: inherit;
+    left: 50px;
+    top: 150px;
+    background: radial-gradient(orange 60%,yellow);
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+

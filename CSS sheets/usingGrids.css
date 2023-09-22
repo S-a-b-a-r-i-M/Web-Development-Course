@@ -1,0 +1,113 @@
+
+/*
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    gap: 5px;
+    background-color: rgb(198, 243, 198);
+}
+
+.header{
+    background: linear-gradient(lightgreen,lightgreen,green);
+    grid-column: span 3;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer{
+    background-color: lightgreen;
+    grid-column: span 3;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.number{
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 20px;
+}
+
+.slidebar1{
+    border-right: 2px solid green; 
+    padding: 10px;
+}
+
+.slidebar2{
+    grid-column-start: 3;
+    border-left: 2px solid green;
+    padding: 10px;
+}
+
+.mainContent{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 2px solid green;
+    padding: 10px;
+}   */
+
+
+/* USING GRID TEMPLATE AREA */
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 8vh 80vh 8vh;
+    grid-template-areas: 
+    "h h h h"
+    "sb1 m m sb2"
+    "f f f f";
+    background-color: rgb(176, 226, 176);
+}
+
+.header{
+    background: linear-gradient(green,lightgreen);
+    grid-area: h;
+    text-align: center;
+}
+
+.footer{
+    background: linear-gradient(lightgreen,green);
+    grid-area: f;
+    text-align: center;
+}
+
+.slidebar1{
+    grid-area: sb1;
+    text-align: center;
+    overflow: scroll;
+}
+
+.slidebar2{
+    grid-area: sb2;
+    text-align: center;
+    overflow: scroll;
+}
+
+.mainContent{
+    grid-area: m;
+    line-height: 1.5em;
+    font-size: 15px;
+    border: 2px solid green;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.number{
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: rgb(110, 204, 110);
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.5em;
+}
+

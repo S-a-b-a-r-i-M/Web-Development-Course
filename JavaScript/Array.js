@@ -4,27 +4,34 @@ let prime=[];
 prime[0]=3;
 prime[1]=5;
 prime[2]=7;
+//INDEX 3,4 BECOME UNDEFINED
+prime[5]=15;
 
-/*console.log("pushing 11 " + prime.push(11));
+// for(let val of prime)
+//     console.log(val);
+/*
+console.log("pushing 11 " + prime.push(11));
 console.log(prime);
 prime.push(13);
 //PUSHING OMRE THAN ONE ELE USING PUSH METHOD()
 prime[prime.length]=17;
 prime.push(19,23,29);
 
-console.log(prime+'\n');
+console.log(prime+'\n'+'typeof : ');
 console.log(typeof prime);
 console.log("Length of the Array is :" + prime.length);
-console.log("Out of range :"+prime[-1]); */
-/*
+console.log("Out of range :"+prime[-1]);    */
+
 //POP
+console.log(prime);
 prime.pop();
 console.log(prime.pop());
 console.log(prime);
 
 //SHIFT -- UNSHIFT
-prime.shift();
-prime.shift();
+console.log("--------- USING SHIFT & UNSHIFT ---------");
+prime.shift(); // REMOVING 3
+prime.shift(); // REMOVING 5
 console.log(prime);
 prime.unshift(5);
 console.log(prime);
@@ -36,20 +43,20 @@ for(let ele of prime)
     console.log(ele);
 }
 
-// for(let ele in prime)//THE FOR-IN LOOP ITERATES THE INDEX VALUES OF THIS ARRAY
+// for(let ele in prime) // THE FOR-IN LOOP ITERATES THE INDEX VALUES OF THIS ARRAY
 // {
 //     console.log(prime[ele]);
 // }
 
 //MIX TYPE ARRAY
-let data=['sabari', 21, {degree:'B.Sc Degree'}, 
+/*let data=['sabari', 21, {degree:'B.Sc Degree'}, 
           function(){console.log('im the function in the array')}];
 
 console.log('\n' + data + '\n');
-data[data.length-1]();//CALLING FUNCTION INSIDE THE ARRAY
-*/
+data[data.length-1]();//CALLING FUNCTION INSIDE THE ARRAY   */
 
-/*console.log("\n--------- Destructuring ---------");
+
+console.log("\n--------- Destructuring ---------");
 //ARRAY DESTRUCTING
 const fibo=[1,1,2,3,5,8,12];
 let [a,b,c,d]=fibo;
@@ -71,7 +78,7 @@ console.log(" after swapping  a:"+num1+" b:"+num2 +'\n');
 //SPLIT() METHOD
 let words="My name is Sabari".split(' ');
 console.log(words);
-console.log(words[2]); */
+console.log(words[2]); 
 
 //FOREACH() 
 console.log("-------- forEach ---------");
@@ -102,6 +109,8 @@ arr.map( num => (num*num))
    .forEach((num,idx) => {
         console.log(idx+"\t"+num);
    });
+
+console.log(arr);
 
 //REUECE()
 console.log("Total sum");

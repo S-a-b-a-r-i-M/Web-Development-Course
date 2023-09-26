@@ -1,23 +1,29 @@
 
 div{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(231, 48, 85);
     margin: 40px; 
     transition: all;
     transition-duration: 3s;
-
+    text-align: center;
+    color: white; 
     /* property specifies a delay (in seconds) for the transition effect. */
     /* transition-delay: 2s; */
 
     /* transition-property: width; */
-    transition-property: height,width,transform;
-    
+    transition-property: height,width,transform,font-size;
+    /* transition-delay: 2s; */
+
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
     /* property specifies the speed curve of the transition effect */
     /* transition-timing-function: ease-in-out; */
-    transition-timing-function: cubic-bezier(1,-0.51, 0.07, 1.07);
+    transition-timing-function: cubic-bezier(1,-0.41, 0.07, 1.07);
 }
-
+  
 
 /* transition-timing-function property can have the following values:
 
@@ -33,7 +39,8 @@ div:hover{
     height: 80vh;
     border-radius: 20%;
     background: linear-gradient(crimson,black);
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+    font-size: 24px;
 }
 
 h2{

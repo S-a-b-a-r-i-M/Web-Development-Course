@@ -114,10 +114,12 @@ console.log(arr);
 
 //REUECE()
 console.log("Total sum");
-let sum=arr.reduceRight((a,b) => {
+let sum=arr.reduceRight((a,b) => {  //AARAY REDUCERIGHT IS CALL FROM DESCENDING ORDER  
     console.log("a:"+a+" b:"+b);
-    return a+b});
+    return a+b }
+    );
 console.log("\nsum : ",sum);
+
 
 
 

@@ -1,0 +1,22 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(172, 240, 70);
+    /* ANIMATION PROPERTIES */
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    position: relative;
+}
+
+@keyframes animation {
+    to{  background-color: maroon;  }
+
+    50%{
+        width: 200px;
+        height: 200px;
+    }
+}
+

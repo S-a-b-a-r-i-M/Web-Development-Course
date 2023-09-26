@@ -1,0 +1,72 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background */
+    overflow: hidden;
+}
+
+.navbar{
+    background-color:rgb(189, 205, 221);
+    display: flex;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .logo{
+    font-size: 20px;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:orangered;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+.menuline{
+    background-color: orangered;
+    width: 25px;
+    height: 4px;
+    margin: 3px;
+}
+
+.menubar{
+    /* The cursor property in CSS allows you to specify the type of cursor or pointer that should be displayed when hovering over an element,*/
+    cursor: pointer;
+    display: none;
+}
+
+@media all and (max-width:500px) {
+
+    .menubar{
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar  li{
+        display: block;
+    }
+
+    ul{
+        display: none;
+    }
+}

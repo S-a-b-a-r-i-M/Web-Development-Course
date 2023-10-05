@@ -1,0 +1,54 @@
+
+body{
+    height: 100vh;
+    width: 100vb;
+    background-color: tan;
+    display: flex;
+    overflow: hidden;
+    /* IF YOU GIVE MARGIN AS AUTO IT WILL ALIGN THE CONTENT TO CENTER OF THE PAGE */
+    margin: auto;
+}
+
+.converter{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(21, 21, 54);
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+    padding: 10% 0% 0%;
+    color: tan;
+    margin: auto;
+}
+
+button{
+    padding: 5px;
+    background-color: tan;
+    font-weight: 700;
+    color:  rgb(21, 21, 54);
+    border: 2px double white;
+    border-radius: 30px;
+    padding: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#result{
+    color: an;
+    font-size: 1.3em; 
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+h2{
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    100%{
+        color: whitesmoke;
+    }
+}

@@ -10,8 +10,14 @@ body{
     overflow: hidden;
 }
 
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its parent container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+    min-height: 600px;
+}
+
 .navbar{
-    background-color:rgb(189, 205, 221);
+    background-color:rgb(83, 83, 129);
     display: flex;
     width: 100%;
     min-height: 10vh;
@@ -19,16 +25,17 @@ body{
     justify-content: space-around;
 }
 
-.navbar .logo{
-    font-size: 20px;
+.navbar > .logo > a{
+    font-size: 22px;
 }
 
-.navbar li{
+.navbar  li{
     display: inline-block;
     margin: 10px;
 }
 
 .navbar a{
+    font-size: 18px;
     text-decoration: none;
     color:orangered;
 }
@@ -50,23 +57,47 @@ a:hover{
     display: none;
 }
 
+/* TO SHOW THE MENUS WHEN WE CLICK THE MENU ICON */
+.showmenu{
+    display: block;
+}
+
+.alignLogo{
+    flex-direction: row;
+    align-self: flex-start;
+    margin: 20px 0px 0px 20px;
+}
+
 @media all and (max-width:500px) {
 
     .menubar{
         display: block;
         position: absolute;
         right: 10px;
+        top: 20px;
     }
 
     .navbar{
         flex-direction: column;
+        animation-name: animation;
+        animation-duration: 5s;
+        /* IT USED TO PREVENT RETURNING TO ITS PREVIOUS STATE, ONCE THE ANIMATIONN IS COMPLETED*/
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes animation{
+     100%{
+        background-color: black;
+     }
     }
 
     .navbar  li{
+        /* none to block */
         display: block;
     }
 
     ul{
         display: none;
     }
+
 }

@@ -1,0 +1,37 @@
+
+body{
+    margin: 0;
+    color: crimson;
+    overflow: hidden;
+}
+
+h3{
+    margin-left: 20px;
+}
+
+.box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    border-top: 2px solid black;
+    overflow: hidden;
+}
+
+#btn{
+    padding: 5px;
+    color: crimson;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    /* right/-left  -top/down  blur*/
+    box-shadow: 2px 1px 10px;
+}

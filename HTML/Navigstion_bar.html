@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
-    <link rel="stylesheet" href="CSS sheets/Navigation_bar.css">
+    <link rel="stylesheet" href="/CSS sheets/Navigation_bar.css">
 </head>
 <body>
     <nav class="navbar">
@@ -25,8 +25,21 @@
             <div class="menuline"></div>
         </div>
     </nav>
+    <div class="box"></div>
 
-    <img src="Images/wallpaperflare.com_wallpaper.jpg" alt="image not supported"> 
+    <img src="/Images/wallpaperflare.com_wallpaper.jpg" alt="image not supported" height="70%" width="100%"> 
     
 </body>
+<script>
+    const menu=document.querySelector(".menubar");
+    const menuList=document.querySelector("nav ul");
+    const logo=document.querySelector('.navbar .logo');
+    //ADDING CLICK EVENT LISTENERS
+    menu.addEventListener('click',()=>{
+        menuList.classList.toggle('showmenu');
+        logo.classList.toggle('alignLogo');
+     });
+
+</script>
+
 </html>

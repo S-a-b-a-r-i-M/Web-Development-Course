@@ -24,7 +24,7 @@ header{
     display: flex;
     flex: 6;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     position: fixed;
     padding-top: 15px;
     background: linear-gradient(rgba(240, 240, 255, 0.1), rgba(220, 220, 255, 0.5));
@@ -108,7 +108,6 @@ h2{
 }
 
 .menu{
-    color: black;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     background: linear-gradient(to right,rgb(85, 83, 83) 50%,black);
@@ -126,9 +125,6 @@ h2{
 .menu table{
     padding: 10px;
     color: white;
-}
-
-.menu table{
     row-gap: 10px;
     width: 100%;
 }
@@ -170,7 +166,24 @@ h2{
 .copywrite{
     color: var(--white);
     background: linear-gradient(to right,black,gray);
-    padding-left: 10px;
+    padding: 5px;
+    height: 5vh;
+    display: flex;
+    width: 100%;
 }
 
+.copywrite .icons
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left:10px;
+    transition: all;
+}
 
+.copywrite a:hover
+{   
+    transition-duration: 1s;
+    background-color: var(--green);
+}

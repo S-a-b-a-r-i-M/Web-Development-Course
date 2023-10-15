@@ -4,16 +4,17 @@
     <head>
         <title>Awesome Machi</title>
         <link rel="stylesheet" href="Restaurent.css">
+        <!-- LINK FOR USING FONT FROM FONT AWESOME -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css ">
+        <link rel="icon" href="/Restaurent Project/icons/icon.ico">
     </head>
     <body>
        <div class="landing">
          <header>
-            <a href="" id="logo"><i class="fa-solid fa-bowl-food"></i> Awesome Machi</a>
+            <a href="" id="logo">Awesome Machi</a>
             <nav>
-                
-                <a href=""><i class="fa-solid fa-bars"></i>  Menu</a>
-                <a href=""> <i class="fa fa-map-marker" aria-hidden="true"></i>  Locations</a>
+                <a href="#menu"><i class="fa-solid fa-bars"></i>  Menu</a>
+                <a href="#location"> <i class="fa fa-map-marker" aria-hidden="true"></i>  Locations</a>
             </nav>
          </header>
          
@@ -25,7 +26,7 @@
             </div>
        </div>
 
-       <h2>Menu</h2>
+       <h2 id="menu">Menu</h2>
        <div class="menu">
         <div class="starters">
             <table>
@@ -34,6 +35,7 @@
                     <tr>
                         <td>Gobi 65<td>
                         <td>&#8377 80</td>
+                        <!-- &#8377 is Rupee symbol -->
                     </tr>
                     <tr>
                         <td>Puffs<td>
@@ -93,7 +95,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="dessert">
+        <div class="dessert" >
             <table>
                 <th>Desserts</th>
                 <tbody>
@@ -123,7 +125,7 @@
 
        </div>
 
-       <h2>Locations</h2>
+       <h2  id="location">Locations</h2>
        <div class="location">
          <div class="chennai">
             <h3>Anna Nagar</h3>
@@ -151,7 +153,13 @@
          </div>         
        </div>
 
-       <div class="copywrite">&#169 to awesome machi</div>
-
+       <div class="copywrite">
+         &#169 to awesome machi
+            <div class="icons">
+                <a href=""><img src="icons/facebook logo_icon.png" alt="fb icon" width="20px" height="20px"></a>
+                <a href=""><img src="icons/instagram logo_icon.png" alt="insta icon" width="20px" height="20px"></a>
+                <a href=""><img src="icons/linkedin logo_icon.png" alt="linkedin icon" width="20px" height="20px"></a>
+            </div>
+        </div>
     </body>
 </html>

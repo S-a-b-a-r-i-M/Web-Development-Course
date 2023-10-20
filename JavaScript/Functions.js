@@ -64,6 +64,7 @@ add(-10,-1.2);
 
 
 //CONSTRUCTOR FUNCTION
+/*
 function Person(name, gender, age)
 {
     this.name=name;
@@ -87,7 +88,21 @@ obj2.print();
 obj2.age=12;
 obj2.print();
 console.log(obj2);
+*/
 
+//INNER FUNCTIONS
+function outer(name)
+{
+    function inner()
+    {
+       console.log("hello",name);
+    }
+    return inner;
+}
+
+let innerFun=outer("sabari");
+
+innerFun();
 
 
 

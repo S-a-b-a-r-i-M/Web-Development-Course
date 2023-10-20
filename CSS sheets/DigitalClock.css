@@ -1,0 +1,26 @@
+
+body
+{
+    display: flex;
+    justify-content: center;/* ALIGN ITEMS CENTER HORIZONTICALLY*/
+    align-items: center;/* ALIGN ITEMS CENTER VERTICALLY */
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg,black,rgb(70, 183, 228),rgb(92, 192, 231),white);
+    overflow: hidden;
+    margin: 0px;
+
+}
+
+#meridium
+{
+    font-size: 0.60em;
+}
+
+.clock
+{
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 4em;
+}
+

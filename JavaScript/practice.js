@@ -29,6 +29,29 @@ console.log(`The addition of ${num1} and ${num2} is ${result}`);
 
 */
 
- let nme="100";
- let diff=nme-10;
- console.log(diff);
+let arr=[10,20,30,40];
+sum(arr);
+
+function sum(arr){
+    let res=0;
+    console.log(typeof(res));
+    for(let val of arr)
+        res+=val;
+
+    console.log(res);
+}
+
+let res=0;
+let tot=arr.forEach(
+    (val)=>{
+        res+=val;    
+    });
+//ONLY ONE ARGUMENT AND ONE BODY STATEMENT ,THEREFORE NO NEED FOR -> {}
+let area= r => 3.14*Math.pow(r,2);
+
+console.log("Area of a circle : ",area(7));
+
+
+
+
+

@@ -58,6 +58,7 @@ data[data.length-1]();//CALLING FUNCTION INSIDE THE ARRAY   */
 
 console.log("\n--------- Destructuring ---------");
 //ARRAY DESTRUCTING
+/*
 const fibo=[1,1,2,3,5,8,12];
 let [a,b,c,d]=fibo;
 
@@ -92,7 +93,7 @@ console.log("\nVal Idx");
 arr=[1,2,3,4,5,6];
 arr.forEach((val, index) =>{
     console.log(" "+val+"  "+index);
-}); 
+});     
 
 //FILTER() 
 console.log("Odd numbers using filter()");
@@ -101,7 +102,7 @@ console.log(odd_arr);
 
 console.log("Even numbers");
 const even_arr=arr.filter(n => n%2!=1);
-console.log(even_arr);
+console.log(even_arr);  
 
 //MAP()
 console.log("\nSquare values using map()");
@@ -110,15 +111,47 @@ arr.map( num => (num*num))
         console.log(idx+"\t"+num);
    });
 
-console.log(arr);
+console.log(arr);*/
 
+let obj_arr=[
+                {name:"sabari",age:21},
+                {name:"nithika",age:12},
+                {name:"chithra",age:43},
+                {name:"Murugan",age:45}
+            ]
+
+let names=obj_arr.map((obj) => {
+    return obj.name;
+});
+
+let ages=obj_arr.map((obj) => obj.age );
+
+console.log(names,"\n",ages);
 //REUECE()
+/*
 console.log("Total sum");
 let sum=arr.reduceRight((a,b) => {  //AARAY REDUCERIGHT IS CALL FROM DESCENDING ORDER  
     console.log("a:"+a+" b:"+b);
     return a+b }
     );
 console.log("\nsum : ",sum);
+*/
+
+//FINDING FREQUENCY USING REDUCE
+console.log("-------FREQUENCY---------");
+let alpha=['a','b','b','c','c','d','e','a','c','c'];
+let obj={}
+
+alpha.map((val)=>{
+    if(obj[val]==undefined)//NO PAIR, THE CREATE ONE
+        obj[val]=1;
+    else//IF PAIR IS EXIST, THEN INCREMENT ITS FREQUENCY(VALUE)
+        obj[val]=obj[val]+1;
+});
+
+console.log(obj);
+
+
 
 
 

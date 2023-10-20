@@ -125,3 +125,5 @@ console.log(lion.toString());
 
 const eagle=new Eagle('Eagle','predator','80 mile/hr');
 console.log(eagle.toString());
+
+console.log("We cann't access the super class static variable",eagle.alive);

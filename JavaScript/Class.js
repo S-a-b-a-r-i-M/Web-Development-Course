@@ -30,6 +30,7 @@ mt.toString();
 
 console.log("------STATIC VARIABLE AND METHOD-----");
 //STATIC VARIABLE AND METHOD
+/*
 class Car
 {
     static count_of_cars=0;
@@ -66,3 +67,39 @@ console.log("Count using static method",Car.getCount());
 //TRYING TO ACCESS STATIC VARIABLES AND METHODS USING INSTACES
 console.log("Total number of cars using class instance :",nano.count_of_cars);
 //console.log(hyundai.getCount());//ERROR
+
+    */
+
+//METHOD OVERRIDING
+console.log("\n-----Mthod Overrinding------");
+
+class Human
+{
+    constructor(name,age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+
+    print()
+    {
+        console.log(`My name is ${this.name} and ${this.age}years old`);
+    }
+}
+
+class Employee extends Human
+{
+    constructor(name,age,designation)
+    {
+        super(name,age);
+        this.designation=designation;
+    }
+
+    print()
+    {
+        console.log(`My name is ${this.name} and im working as a ${this.designation}`);       
+    }
+}
+
+let emp=new Human("sabari",21);
+emp.print();

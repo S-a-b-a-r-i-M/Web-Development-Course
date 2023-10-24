@@ -1,10 +1,10 @@
 //OBJECT LITERAL
-let human={
+human={
    name:'sabari',
    age:21,
 };
 
-//console.log(human);
+console.log(human);
 //console.log(`my name is ${human.name} and im ${human['age']} years old.`);
 
 //MOSTLY WE USE THE [] TO FETCH OBJECTS KEY VALUES BY USER INPUT OF KEYS

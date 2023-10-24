@@ -1,5 +1,5 @@
 /*In JavaScript, a Promise is a built-in object that represents a future value or the eventual completion (or failure) of an asynchronous operation. Promises provide a cleaner and more structured way to work with asynchronous code, making it easier to manage asynchronous tasks, such as network requests, file operations, and timers. Promises were introduced in ECMAScript 6 (ES6) and have become a fundamental part of modern JavaScript development. Here's an overview of Promises in JavaScript:     */
-function ticketBookingFun(){
+/*function ticketBookingFun(){
 const ticketBooking=new Promise((resolve,reject)=>{
     let ticket=true;
     if(ticket)
@@ -14,7 +14,7 @@ ticketBooking
 }
 
 setInterval(ticketBookingFun,500);
-
+    */
 //USING PROMISE INSIDE FUNCTION
 function tossCoin()
 {

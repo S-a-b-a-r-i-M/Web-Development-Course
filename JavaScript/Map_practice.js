@@ -1,4 +1,5 @@
 //CREATING A NEW MAP
+
 let map_1=new Map();
 
 map_1.set("name","sabari");
@@ -9,14 +10,19 @@ let hobby=['playing','reading','coding'];
 map_1.set('hobbies',hobby);
 
 //ITERATING
-console.log("----------Interations over the map1--------");
+/*
+console.log("----------Iterations over the map1--------");
+    // FOR OF
+console.log('\n---printing entries of map---');
 for(let entries of map_1)
-{
     console.log(entries);
-}
 
-console.log();
-map_1.forEach( (val, key) =>{
+console.log('\n---printing key, value of map---');
+for(let [k,v] of map_1)
+    console.log(k,":",v);
+
+console.log('\n---for each loop---');
+map_1.forEach( (val, key) =>{ //value and then key because in array first value then only index right...like that 
     console.log(key,":",val);
 })
 
@@ -25,13 +31,12 @@ for(let key of map_1.keys())
 {
     console.log(map_1.get(key));
 }
+*/
 
 console.log("\nMy hobbies");
 console.log('----------')
 for(let val of map_1.get('hobbies'))
-{
     console.log(val);
-}
 
 //METHODS OF MAP
 console.log("\n-----------Methods Of Map----------");

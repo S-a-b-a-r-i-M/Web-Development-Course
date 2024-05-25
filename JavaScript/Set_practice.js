@@ -35,7 +35,8 @@ console.log("\n", set2);
 //SIZE PROPERTY
 console.log("size of the set :"+set2.size+'\n');
 
-console.log(set1.keys());
+console.log("Keys --> ",set1);
+console.log("Values -->",set1.values());
 
 
 

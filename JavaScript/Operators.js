@@ -1,6 +1,6 @@
 //ARITHMETIC OPERATORS
-/*let num = 5+2 , a;
-console.log(num);
+/*
+let num, a;
 
 num=5-2;
 console.log(num);
@@ -32,12 +32,19 @@ num=a--;
 console.log(num, a);
 
 num=--a;
-console.log(num, a);    */
+console.log(num, a);    
+
+// true - 1 , false - 0
+add_two_bool  = true + true
+console.log('add_two_bool:',add_two_bool);
+*/
 
 // RELATIONAL OPERATORS
 
+// == -> just value not type, === -> value and also type
+
 console.log(5==5);
-console.log('5'==5);//IMPLICIT TYPE COERSION PERFORMED
+console.log('5'==5);//IMPLICIT TYPE COERCION PERFORMED
 console.log(3==9);
 console.log("sabari"=="sabari", '\n');
 
@@ -53,9 +60,19 @@ console.log(true===false, '\n');
 console.log(5!=='5');
 console.log('a'!=='a', '\n');
 
+// number, number
 console.log(10>=9.9);
 console.log(10<10.01, '\n');
+// string, string
+console.log('string, string :','abs' < 'bash'); // a - 65, z - 91, A - 97, Z - 122, 0 - 48, 9 - 57
+// number, string
+console.log('number, string[number] :','2' > 0.1);
+console.log('number, string[alpha] :','a' > 0.1,'\n');
 
+// LOGICAL OPERATOR
 console.log(true && true);
 console.log(false || true);
 console.log(!false);
+
+console.log(true & false);
+console.log(false | true);

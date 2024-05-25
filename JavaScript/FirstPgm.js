@@ -6,8 +6,16 @@ console.log(num)
 //String
 var $username='sabari';
 console.log($username);
+
 _sistername="nithika";
 console.log(_sistername);
-$mother='Chithra';
-console.log($mother);
+
+
+// We can use ' or " for string
+var my_name="sabari's computer"
+console.log(my_name);
+
+var my_name='sabari said "i love computers" '
+console.log(my_name);
+
 

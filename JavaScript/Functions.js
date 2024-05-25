@@ -6,16 +6,9 @@ function greetings()
 
 greetings();
 
-function welcome(user)
-{
-    console.log(`Hello ${user}`);
-}
-
-welcome("sabari");
-
 function sum(x,y)
 {
-    s=x+y;
+    var s= x+y;
     return s;
 }
 
@@ -23,8 +16,25 @@ let add=sum(10,20);
 console.log("sum is",add);
 */
 
-//DEFAULT ARGUMENTS
+// Question: if it'll executes line by line i called welcome("sabari") function before defining it , how js executes it without throwing any error?
+// Answer: In JavaScript, this behavior is possible due to a mechanism called Hoisting.etc...
 /*
+welcome("sabari");
+function welcome(user)
+{
+    console.log(`Hello ${user}`);
+}
+
+greet('Galaxy') //but this won't work
+const greet =  function (user) {
+                console.log(`Hello ${user}`)
+            }
+greet('Universe')  // it'll work
+*/
+
+/*
+//DEFAULT ARGUMENTS
+num = readLine()
 function sum(num1=0,num2=0,num3=0)
 {
     return num1+num2+num3;
@@ -39,10 +49,13 @@ console.log(sum,'\n');
 let fun= function(user)
          {
             console.log("Hello "+user);
-            console.log("Welcome to JS world!!! \n");
+            console.log("Welcome to JS world!!!");
          }
 
 fun('Sabari');
+var fun1 = fun
+var fun2 = fun1
+console.log(fun1, fun2,'\n');
 
 //ARROW FUNCTION
 let greet = (name,profession="Advocate") => 
@@ -52,45 +65,41 @@ let greet = (name,profession="Advocate") =>
 
 greet("Sabari","Software Developer")
 greet("Nithika");
-
+console.log('\n');
 
 function add(num1,num2)
 {
-    console.log(Math.abs(num2)+Math.abs(num1));
+    console.log(Math.abs(num2+num1));
 }
 
 add(-10,-1.2);
-                */
+        */        
 
 
 //CONSTRUCTOR FUNCTION
-/*
-function Person(name, gender, age)
-{
-    this.name=name;
-    this.gender=gender;
-    this.age=age;
 
-    this.print= function(){
-        console.log(`${this.name} is a ${this.gender} and he/she is ${this.age} years old \n`);
+function Employee(id, name, salary){
+    this.id = +(id)
+    this.name = name
+    this.salary = parseFloat(salary)
+
+    this.empInfo = function(){
+        console.log('         Employee Details             ');
+        console.log('--------------------------------------');
+        console.log(' id |   name   |  salary  ');
+        console.log(`${this.id}       ${this.name}       ${this.salary}`);
     }
 }
 
-let obj1=new Person('sabari','male',21);
-let obj2=new Person('nithika','female',11);
+let emp1= new Employee(1, 'sabari', 35000)
+let emp2= new Employee('2', 'arasu', 30000)
+let emp3= new Employee(3, 'saran', 25000)
 
-console.log(obj1,'\n');
-console.log(obj2);
-
-obj1.print();
-obj2.print();
-
-obj2.age=12;
-obj2.print();
-console.log(obj2);
-*/
+console.log(emp1, emp2, emp3)
+console.log(emp1.empInfo());
 
 //INNER FUNCTIONS
+/*
 function outer(name)
 {
     function inner()
@@ -103,6 +112,8 @@ function outer(name)
 let innerFun=outer("sabari");
 
 innerFun();
+*/
+
 
 
 

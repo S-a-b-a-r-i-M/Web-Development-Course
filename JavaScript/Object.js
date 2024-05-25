@@ -1,10 +1,11 @@
 //OBJECT LITERAL
+/*
 human={
    name:'sabari',
    age:21,
 };
 
-console.log(human);
+// console.log(human);
 //console.log(`my name is ${human.name} and im ${human['age']} years old.`);
 
 //MOSTLY WE USE THE [] TO FETCH OBJECTS KEY VALUES BY USER INPUT OF KEYS
@@ -20,14 +21,20 @@ let software_dev = {
     }
 };
 
-/* console.log(software_dev);
- console.log();
- console.log(software_dev.laptop);
- console.log();
- console.log("length :"+software_dev.bike.length+'\n');
+// console.log(software_dev);
+// console.log();
+// console.log(software_dev.laptop);
+// console.log();
+// try{
+//     console.log("length :"+software_dev.bike.length+'\n');
+// }
+// catch{
+//     console.log('[----error---]');
+// }
+
  
 
-//DELEATE A PROPERTY FROM OBJECT
+//DELETE A PROPERTY FROM OBJECT
 delete software_dev.bike;
 console.log(software_dev.bike?.length + '\n');
 
@@ -45,7 +52,7 @@ console.log();
 
 for(let key in software_dev.laptop)
     console.log(key,software_dev.laptop[key]);*/
-
+/*
 let woman={
     name:'nithika',
     age:12,
@@ -56,7 +63,7 @@ let man={
     profession:"Software Developer",
 }
 //USED TO MERGE TWO OR MORE OBJECTS INTO A TARGET OBJECT
-Object.assign(human,man,woman);
+Object.assign(human, man, woman);
 //console.log(human);
 
 //USED TO RETRIEVE AN ARRAY OF OBJECT'S KEYS
@@ -67,8 +74,10 @@ console.log("Values :" + Object.values(software_dev)+'\n');
 
 //USED TO RETRIEVE AN ARRAY OF OBJECT'S ENTRIES
 console.log(Object.entries(software_dev)+'\n');
+*/
 
 //METHOD IN OBJECT
+
 let dog={
     name:'Tornado',
     color:'Brown',
@@ -76,8 +85,8 @@ let dog={
         console.log("VowVow...Vow!!! \n")
     }
 }
-
-dog.sound();
+if(typeof(dog) == 'object')
+    dog.sound();
  
 let cat={
     name:"poona",
@@ -94,27 +103,29 @@ cat.sound();
 let laptop={
     cpu:'AMD',
     ram:8,
-    brand:undefined,
+    brand:null,
 
-    setBrand: function(brand){
+    setBrand(brand){
         this.brand=brand;
     }
 }
-/*
+
 console.log(laptop);
-console.log("\nAfter set brand");
 laptop.setBrand("Dell");
-console.log(laptop);*/
+console.log(`\nAfter set brand -> ${laptop} \n`);// here its not working
 
 
 let mobile1={
+    //attributes
     ram:8,
     core:4,
     brand:'Vivo',
-
+    //method
     compare: function(mobile2){
-        if(this.core >= mobile2.core)
+        if(this.core >= mobile2.core){
             console.log(this.brand+' win '+mobile2.brand);
+            console.log('this -> ',this);
+        }
         else
             console.log("You lost this game");
     },
@@ -122,20 +133,18 @@ let mobile1={
 
 let mobile2={
     ram:4,
-    core:4,
+    core:2,
     brand:'Redmi',
 
-    compare: (other_mobile) =>
-    {
+    compare(other_mobile){
         if(this.ram > other_mobile.ram)
             console.log(this.brand+' win this Mobile '+other_mobile.brand);
         else
-            console.log("You lost this game");
+            console.log(`${this.brad} lost this game to ${other_mobile.brad}`);
     }
 }
 
 mobile1.compare(mobile2);
-
 
 
 

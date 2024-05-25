@@ -1,4 +1,5 @@
 //CLASSES AND OBJECTS
+/*
 class Bike
 {
     //PROPERTIES
@@ -6,8 +7,9 @@ class Bike
     // model;
     // mileage;
 
-    //CONSTRUTOR
-    constructor(brand, model, mileage)
+    //CONSTRUCTOR 
+    //Constructor overloading not possible
+    constructor(brand, model, mileage=0)
     {
         this.brand=brand;
         this.model=model;
@@ -23,14 +25,18 @@ class Bike
 let pulsar=new Bike("Bajaj Pulsar",'Pulsar 150',50);
 let apache=new Bike('TVS Apache','Apache RTR',45);
 let mt=new Bike('Yamaga','MT',40);
+let r15 = new Bike('Yamaga', 'R15')
 
 pulsar.toString();
 apache.toString();
 mt.toString();
+r15.toString();
+*/
 
-console.log("------STATIC VARIABLE AND METHOD-----");
+
 //STATIC VARIABLE AND METHOD
 /*
+console.log("------STATIC VARIABLE AND METHOD-----");
 class Car
 {
     static count_of_cars=0;
@@ -66,16 +72,16 @@ console.log("Count using static method",Car.getCount());
 
 //TRYING TO ACCESS STATIC VARIABLES AND METHODS USING INSTACES
 console.log("Total number of cars using class instance :",nano.count_of_cars);
-//console.log(hyundai.getCount());//ERROR
-
-    */
+// console.log(hyundai.getCount());//ERROR
+*/
 
 //METHOD OVERRIDING
-console.log("\n-----Mthod Overrinding------");
+
+console.log("\n-----Method Overriding------");
 
 class Human
 {
-    constructor(name,age)
+    constructor(name, age)
     {
         this.name=name;
         this.age=age;
@@ -89,7 +95,7 @@ class Human
 
 class Employee extends Human
 {
-    constructor(name,age,designation)
+    constructor(name, age, designation)
     {
         super(name,age);
         this.designation=designation;
@@ -101,5 +107,8 @@ class Employee extends Human
     }
 }
 
-let emp=new Human("sabari",21);
-emp.print();
+let emp1=new Human("sabari",22);
+emp1.print();
+
+let emp2=new Employee("arasu",21,"SDT")
+emp2.print()

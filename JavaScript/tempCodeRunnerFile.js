@@ -1,1 +1,1 @@
- accumulator+val
+stringify

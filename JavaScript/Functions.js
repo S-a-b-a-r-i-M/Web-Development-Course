@@ -77,7 +77,7 @@ add(-10,-1.2);
 
 
 //CONSTRUCTOR FUNCTION
-
+/*
 function Employee(id, name, salary){
     this.id = +(id)
     this.name = name
@@ -97,6 +97,7 @@ let emp3= new Employee(3, 'saran', 25000)
 
 console.log(emp1, emp2, emp3)
 console.log(emp1.empInfo());
+*/
 
 //INNER FUNCTIONS
 /*
@@ -114,6 +115,28 @@ let innerFun=outer("sabari");
 innerFun();
 */
 
+// When you should not use Arrow Functions
+  //1. Object methods
+
+let emp_info = {
+    salary : 30000,
+    update : (val) =>{
+        this.salary += val
+        console.log("this arrow isn't referencing the current object",this);
+    },
+    updateUsingNormalFun: function(val) {
+        this.salary += val
+        console.log("default function referencing the current object",this);
+    },
+}
+
+console.log("Initial salary:",emp_info.salary);
+emp_info.update(5000)
+console.log("After incrementing 5000,using arrow function but there is no modification ",emp_info.salary);
+emp_info.updateUsingNormalFun(5000)
+console.log("After incrementing 5000,using normal function ",emp_info.salary);
+
+// Reason: 'this' inside the arrow function refers to the global object (window in a browser, or global in Node.js)
 
 
 

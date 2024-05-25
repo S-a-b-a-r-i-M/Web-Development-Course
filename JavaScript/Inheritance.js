@@ -31,8 +31,8 @@ class Mother
 
 }
 
-//INHERITE FATHER CLASS TO SON CLASS
-class Son extends Father // mother   ---   JS DOESN'T SUPPPORT MULIPLE INHERITANCE
+//INHERITANCE FATHER CLASS TO SON CLASS
+class Son extends Father // mother   ---   JS DOESN'T SUPPORT MULTIPLE INHERITANCE
 {
     profession;
 
@@ -44,7 +44,7 @@ class Son extends Father // mother   ---   JS DOESN'T SUPPPORT MULIPLE INHERITAN
         this.profession=profession;
     } 
 
-    specialities()
+    specialties()
     {
         console.log("He knows lot of things 1.Karate  2.Swimming  3.Driving");
     }
@@ -63,7 +63,7 @@ console.log(father.asset,'\n');
 father.print();
 
 //ACCESSING FATHER CLASS PROPERTIES
-console.log( `${son.name} is ${son.age} years old and his asset value is ${son.asset} , he woriking as a ${son.profession}\n`);
+console.log( `${son.name} is ${son.age} years old and his asset value is ${son.asset} , he working as a ${son.profession}\n`);
 son.print();
 
 
@@ -95,7 +95,9 @@ class Lion extends Animal
     {
         super(name,type);
         this.runningSpeed=runningSpeed;
-        /*In JavaScript, it's perfectly valid to create and assign properties directly on objects (in this case, instances of the Lion class) without explicitly declaring them beforehand. The this.runningSpeed property is created dynamically when the constructor is executed and is specific to each instance of the Lion class.*/
+        /*In JavaScript, it's perfectly valid to create and assign properties directly on objects 
+        (in this case, instances of the Lion class) without explicitly declaring them beforehand. 
+        The this.runningSpeed property is created dynamically when the constructor is executed and is specific to each instance of the Lion class.*/
     }
 
     toString()
@@ -126,4 +128,4 @@ console.log(lion.toString());
 const eagle=new Eagle('Eagle','predator','80 mile/hr');
 console.log(eagle.toString());
 
-console.log("We cann't access the super class static variable",eagle.alive);
+console.log("We can't access the super class static variable",eagle.alive);

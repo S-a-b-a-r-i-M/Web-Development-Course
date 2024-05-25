@@ -1,13 +1,13 @@
 
 let divider=prompt("Enter a divider");
-let diviser=prompt("Enter a diviser");
+let deviser=prompt("Enter a diviser");
 
 try
 {
-    if(diviser==0)
+    if(deviser==0)
         throw("Dividing by zero error");
 
-    let res=divider/diviser;
+    let res=divider/deviser;
     console.log("Answer is :",Math.round(res));
 }
 catch(error)
@@ -16,5 +16,5 @@ catch(error)
 }
 finally
 {
-    console.log("program runned succesfully");
+    console.log("program ran successfully");
 }

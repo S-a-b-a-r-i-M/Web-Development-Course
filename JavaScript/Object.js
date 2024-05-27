@@ -1,9 +1,15 @@
 //OBJECT LITERAL
-/*
+
 human={
-   name:'sabari',
+   h_name:'sabari',
    age:21,
 };
+
+//OBJECT DESTRUCTURING
+console.log("----------OBJECT DESTRUCTURING-----------");
+let {h_name, age: h_age} = human
+console.log(h_name, h_age);
+
 
 // console.log(human);
 //console.log(`my name is ${human.name} and im ${human['age']} years old.`);
@@ -32,15 +38,13 @@ let software_dev = {
 //     console.log('[----error---]');
 // }
 
- 
-
 //DELETE A PROPERTY FROM OBJECT
 delete software_dev.bike;
-console.log(software_dev.bike?.length + '\n');
+console.log(software_dev.bike?.length + '\n');// it'll print undefined
 
 delete software_dev;//IT WON'T DELETE THE FULL OBJECT , IT CAN ONLY DELETE THE PROPERTY OF THE OBJECT
 console.log(software_dev);
-*/
+
 
 //ITERATE THE OBJECT
 
@@ -77,7 +81,7 @@ console.log(Object.entries(software_dev)+'\n');
 */
 
 //METHOD IN OBJECT
-
+/*
 let dog={
     name:'Tornado',
     color:'Brown',
@@ -97,9 +101,10 @@ let cat={
 }
 
 cat.sound();
-
+*/
 
 //THIS KEYWORD
+/*
 let laptop={
     cpu:'AMD',
     ram:8,
@@ -145,6 +150,7 @@ let mobile2={
 }
 
 mobile1.compare(mobile2);
+*/
 
 
 

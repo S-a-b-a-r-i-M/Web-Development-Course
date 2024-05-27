@@ -20,7 +20,7 @@ export default class Flight
 
     set price(price)
     {   
-        if(price>5000)//THIS IS THE BENIFIT OF SET WE CAN VALIDATE THE VALUE BEFORE ASSGINING
+        if(price>5000)//THIS IS THE BENEFIT OF SET WE CAN VALIDATE THE VALUE BEFORE ASSIGNING
             price=5000;
         this._price=price;
     }

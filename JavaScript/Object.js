@@ -26,7 +26,7 @@ let software_dev = {
         model:2018
     }
 };
-
+console.log(software_dev.size);
 // console.log(software_dev);
 // console.log();
 // console.log(software_dev.laptop);

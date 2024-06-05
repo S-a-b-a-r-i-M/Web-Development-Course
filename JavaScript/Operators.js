@@ -42,7 +42,7 @@ console.log('add_two_bool:',add_two_bool);
 // RELATIONAL OPERATORS
 
 // == -> just value not type, === -> value and also type
-
+/*
 console.log(5==5);
 console.log('5'==5);//IMPLICIT TYPE COERCION PERFORMED
 console.log(3==9);
@@ -68,6 +68,7 @@ console.log('string, string :','abs' < 'bash'); // a - 65, z - 91, A - 97, Z - 1
 // number, string
 console.log('number, string[number] :','2' > 0.1);
 console.log('number, string[alpha] :','a' > 0.1,'\n');
+*/
 
 // LOGICAL OPERATOR
 console.log(true && true);
@@ -76,3 +77,7 @@ console.log(!false);
 
 console.log(true & false);
 console.log(false | true);
+
+    //Other ways to use && and ||
+console.log("" || "the || operator first look into left part if its true, it'll return it, otherwise it'll return the right part");
+console.log((10>-11) && "This statement will return once the left side condition is true, otherwise false");

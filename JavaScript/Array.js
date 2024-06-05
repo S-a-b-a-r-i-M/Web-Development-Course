@@ -45,9 +45,30 @@ for(let ele in prime) // THE FOR-IN LOOP ITERATES THE INDEX VALUES OF THIS ARRAY
 {
     console.log(prime[ele]);
 }
-
 */
 
+//INCLUDES
+let fruits_bucket = ["Banana","Goa","Green grapes","Apple"]
+console.log(fruits_bucket.includes("Goa ".trim())? "Yahooo...Goa is available": "Oops...Goa isn't available")
+console.log(fruits_bucket.includes("Orange")? "Yahooo...Orange is available": "Oops...Orange isn't available\n")
+
+// SOME
+const nums = [1, 3, 4, 5];
+
+// Checks whether an element is even
+const even = (element,idx) => {
+        console.log(idx);
+        return element % 2 === 0;
+    }
+
+// console.log(nums.some(even));
+console.log(nums.reduce((tot, val) => {
+    console.log(tot, val);    
+    tot+=val
+}))
+
+// AT 
+// console.log(nums.at(-1)); 
 
 //MIX TYPE ARRAY
 /*
@@ -151,7 +172,7 @@ console.log("\nsum : ",sum);
 */
 
 //FINDING FREQUENCY
-
+/*
 console.log("-------FREQUENCY---------");
 let alpha=['a','b','b','c','c','d','e','a','c','c'];
 let obj={}
@@ -172,8 +193,4 @@ nums.filter( n => n > 0)
     .map( n => n*n*n)
     .forEach( n => {console.log(n);})
 
-
-
-
-
-
+*/

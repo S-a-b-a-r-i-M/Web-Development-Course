@@ -1,15 +1,24 @@
 //OBJECT LITERAL
 
 human={
-   h_name:'sabari',
-   age:21,
-};
-
-//OBJECT DESTRUCTURING
-console.log("----------OBJECT DESTRUCTURING-----------");
-let {h_name, age: h_age} = human
-console.log(h_name, h_age);
-
+    h_name:'sabari',
+    age:21,
+    education : {
+     "SSLC": "Morning Star High School",
+     "HSC": "KVV Hr.  School",
+     "UG": "GAC-CBE"
+    }
+ };
+ 
+ //OBJECT DESTRUCTURING
+ console.log("----------OBJECT DESTRUCTURING-----------");
+ let {h_name, age: h_age} = human
+ console.log(h_name, h_age);
+     // how can extract only UG
+ let ug_method1 = human.education?.UG
+ let {education: {UG: ug_method2}} = human
+ console.log(ug_method1, ug_method2);
+ console.log();
 
 // console.log(human);
 //console.log(`my name is ${human.name} and im ${human['age']} years old.`);

@@ -16,13 +16,11 @@ console.log(about.replace(/z/,"ggg")); // returns the string without any return 
 console.log(about.match(/i/g)); // returns array of matched words
 console.log(about.match(/nithika/g)) // null for not occurred value
 
-// d  -  Perform start and end matching
-let text = "aabbccdd"
-console.log(text.match(/(aa)b/d));
+let text = "aabbcacdab"
+console.log(text.match(/a+b?/g)); // op: we can see the middle a also in the output
 
 // start and end character matching
 const pattern1 = /^[a-z].+[0-9].+$/igm
-console.log("Murugan0".match(pattern1)); // -> returns an array containing matching strings
 log(pattern1.test("Murugan")) // -> returns bool 
  // pattern1 explanation
  /*
@@ -54,3 +52,49 @@ log(pattern3.test("orango")) // \1$: Ensures the last character matches the firs
 /*The parentheses ([a-zA-Z]) in the regex pattern create a capturing group. 
 A capturing group allows you to capture a part of the string and reference it later
  in the pattern using a back reference.*/
+
+
+ /*QUESTION 1:
+    Complete the function in the editor below by returning a RegExp object,
+    that matches any string  satisfying both of the following conditions:
+
+    String  starts with the prefix Mr., Mrs., Ms., Dr., or Er.
+    The remainder of string  (i.e., the rest of the string after the prefix) 
+    consists of one or more upper and/or lowercase English alphabetic letters (i.e., [a-z] and [A-Z]).
+ */
+log("---------------------- Mr and Mrs question -------------------------")
+// use backslash to denote special characters \.
+const pattern4 = /(Mr\.|Mrs\.|Ms\.|Dr\.|Er\.)[a-zA-Z]+/
+
+log(pattern4.test("Mr.sabari"))
+log(pattern4.test("Mr .sabari"))
+log(pattern4.test("MR sabari"))
+log(pattern4.test("Dr#Joseph"))
+
+/*QUESTION 2:
+Complete the function in the editor below by returning a RegExp object, 
+that matches every integer in some string .
+
+Sample Input
+102, 1948948 and 1.3
+
+Sample Output 
+102
+1948948
+1
+3
+
+Explanation 
+When we call match on string  and pass the correct RegExp as our argument, 
+it returns the following array of results: [ '102', '1948948', '1', '3', '4', '5' ].
+*/
+log("------------------- Finding digits question -----------------------")
+const pattern5 = /\d+/g
+log("patt12345ern56 8.1".match(pattern5))
+
+/*
+\w - matches all the words(alphanum)
+\W - matches all the non-words(alphanum)
+\s - matches all the space characters
+\S - matches all the non-space characters
+*/

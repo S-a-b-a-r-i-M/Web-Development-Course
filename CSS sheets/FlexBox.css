@@ -7,7 +7,7 @@
     /*justify-content: flex-end;/*IT ALIGNS IN X AXIS*/
     justify-content: space-around;
     align-items: center;/*IT ALIGNS IN Y AXIS*/ 
-    flex-wrap: wrap; /*IT WILL WRAP BOX INTO ANOTHER LINE WHITHOUT CHANGING SIZE */
+    flex-wrap: wrap; /*IT WILL WRAP BOX INTO ANOTHER LINE WITH OUT CHANGING SIZE */
     padding: 10px;
 }
 
@@ -30,13 +30,12 @@
 }
 
 .box3{
- /* flex: grow shrink basis */
     flex: 1 1 0px;
 }
 
 .box4{
     flex-grow: 1;
- } 
+} 
 
 
 

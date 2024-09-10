@@ -1,41 +1,45 @@
+.container{
+    display: flex;
+    /* flex-direction: column; */
+}
 
-.flexBox{
+#para1{
+    flex: 1;
+    background-color: rgb(245, 185, 73);
+    order: 3; /* it will move the first para in 3rd position */
+}
+
+#para2{
+    flex: 1;
+    background-color: rgb(241, 232, 232);
+    order: 1;
+}
+
+#para3{
+    flex: 1;
+    background-color: rgb(89, 233, 89);
+}
+
+p{
+    padding: 10px;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+.outerbox{
     min-height: 400px;
     display: flex;
-    flex-direction: row; 
-    border: 2px double black;
-    /*justify-content: flex-end;/*IT ALIGNS IN X AXIS*/
-    justify-content: space-around;
-    align-items: center;/*IT ALIGNS IN Y AXIS*/ 
-    flex-wrap: wrap; /*IT WILL WRAP BOX INTO ANOTHER LINE WITH OUT CHANGING SIZE */
-    padding: 10px;
+    justify-content: flex-end; /* align in main axis*/
+    align-items: center; /* align in cross axis*/
+    flex-wrap: wrap;
+    background-color: rgba(147, 214, 218, 0.404);
+    margin: 5px;
 }
 
 .box{
-    width: 100px;
-    height: 120px;
-    background: conic-gradient(crimson,orange,crimson);
-    font-size: 18px;
-    text-align: center;
-    color: white;
-    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+    border: 1px solid black;
+    margin: 10px;
 }
-
-.box1{
-    flex-grow: 1;
-}
-
-.box2{
-    flex-grow: 1;
-}
-
-.box3{
-    flex: 1 1 0px;
-}
-
-.box4{
-    flex-grow: 1;
-} 
-
-
-

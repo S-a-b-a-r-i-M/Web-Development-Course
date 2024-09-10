@@ -16,12 +16,14 @@ console.log(about.replace(/z/,"ggg")); // returns the string without any return 
 console.log(about.match(/i/g)); // returns array of matched words
 console.log(about.match(/nithika/g)) // null for not occurred value
 
-let text = "aabbcacdab"
+let text = "aabbcadab"
 console.log(text.match(/a+b?/g)); // op: we can see the middle a also in the output
+log(text.match(/[^ab]/g)) // it will return the array of result which not contains a and b
 
 // start and end character matching
 const pattern1 = /^[a-z].+[0-9].+$/igm
 log(pattern1.test("Murugan")) // -> returns bool 
+log(pattern1.exec("a 1 answer")) // -> returns 
  // pattern1 explanation
  /*
  ^             #  Represents beginning of a line
@@ -36,7 +38,7 @@ log(pattern1.test("Murugan")) // -> returns bool
 
  // RegExp class
 text = "007james bond"
-let text2 = "alphabe" 
+let text2 = "alphabet"
 const pattern2 = new RegExp(`^[aeiou].*[aeiou]$`)
 log(pattern2.test(text2))
 /*Explanation
@@ -64,12 +66,14 @@ A capturing group allows you to capture a part of the string and reference it la
  */
 log("---------------------- Mr and Mrs question -------------------------")
 // use backslash to denote special characters \.
+/*
 const pattern4 = /(Mr\.|Mrs\.|Ms\.|Dr\.|Er\.)[a-zA-Z]+/
 
 log(pattern4.test("Mr.sabari"))
 log(pattern4.test("Mr .sabari"))
 log(pattern4.test("MR sabari"))
 log(pattern4.test("Dr#Joseph"))
+*/
 
 /*QUESTION 2:
 Complete the function in the editor below by returning a RegExp object, 
@@ -98,3 +102,4 @@ log("patt12345ern56 8.1".match(pattern5))
 \s - matches all the space characters
 \S - matches all the non-space characters
 */
+

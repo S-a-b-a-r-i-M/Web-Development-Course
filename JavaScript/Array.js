@@ -8,6 +8,8 @@ prime[2]=7;
 prime[5]=15;
 
 console.log(prime);
+prime[5]=-15
+console.log(prime);
 
 //PUSH
 console.log("pushing 11 " + prime.push(11));
@@ -37,14 +39,10 @@ console.log(prime);
 //ITERATION
 console.log("Elements of the array")
 for(let ele of prime)
-{
     console.log(ele);
-}
 
 for(let ele in prime) // THE FOR-IN LOOP ITERATES THE INDEX VALUES OF THIS ARRAY
-{
     console.log(prime[ele]);
-}
 */
 
 //INCLUDES
@@ -54,21 +52,29 @@ console.log(fruits_bucket.includes("Orange")? "Yahooo...Orange is available": "O
 
 // SOME
 const nums = [1, 3, 4, 5];
-
-// Checks whether an element is even
+// Checks whether an element is even using some
 const even = (element,idx) => {
         console.log(idx);
         return element % 2 === 0;
     }
 
 // console.log(nums.some(even));
-console.log(nums.reduce((tot, val) => {
-    console.log(tot, val);    
-    tot+=val
-}))
+
+// EVERY
+// Checks whether all element is odd using some
+const nums2 = [1, 3, 7, 5];
+const isOdd = val => (val % 2) === 1
+console.log(`all elements are ${nums2.every(isOdd) ? "odd" : "not odd"} in ${nums2}`)
+
+
+// FIND and FIND-INDEX
+const first_even_num = nums.find(ele => ele%2 === 0)
+const index = nums.findIndex(ele => ele%2 === 0)
+console.log(`finding first even number using find() method ${first_even_num},index is ${index}`);
 
 // AT 
 // console.log(nums.at(-1)); 
+
 
 //MIX TYPE ARRAY
 /*
